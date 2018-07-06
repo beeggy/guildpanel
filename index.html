@@ -1,0 +1,339 @@
+<html><title>Edito pour La Plume d'Ankaa</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
+    <head><style>
+
+        table {
+
+            padding: 10px;
+            background-image:linear-gradient(to bottom, #FFFFFF, #D3D3D3);
+            border-bottom: 15px solid #9966cd;
+
+        }
+
+        ::-moz-selection { /* Pour firefox */
+            background:#65b9aa;
+            color:white;
+        }
+        ::selection { /* Pour les autres */
+            background: #65b9aa;
+            color:white;
+        }
+
+        fieldset {
+            border:1px solid #9966cd;
+            border-width:3px;
+            background-color: white;
+
+        }
+
+        legend {
+
+            font-size: 15px;
+            font-family: Georgia;
+            font-style : italic;
+            color: #ffffff;
+            display: block;
+            background-color: #9966cd;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius:10px;
+            padding-left: 5px;
+            padding-bottom: 2px;
+            padding-right:5px;
+            text-shadow: -2px 0px 0px #5F2F8E;
+
+
+        }
+
+        .texte {
+
+            font-size: 13px;
+            font-family: Tahoma;
+            overflow: auto;
+            height: 140px;
+
+        }
+
+        .texte:first-letter {
+            font-family:Georgia;
+            font-size:35px;
+            color:#9966cd;
+            float:left;
+            margin-top: -5px;
+            margin-right: 3px;
+            text-shadow: 0px 0px 5px #9966cd;
+        }
+
+        ::-webkit-scrollbar { 
+            width: 5px; /*largeur de la scrollbar verticale*/
+            height: 5px; /*hauteur de la scrollbar horizontale*/
+            background-color: #c8c8c8;}
+
+        ::-webkit-scrollbar-track { 
+            background-color: #c8c8c8; /*couleur du fond de la scrollbar*/}
+
+        ::-webkit-scrollbar-thumb { /*la petite bande qui monte/descend*/
+            background-color: #9966cd /*couleur de l'ascenseur*/;
+            border-radius: 15px;
+            -moz-border-radius: 15px;
+            -webkit-border-radius: 15px;}	
+
+        .texteplanning { 
+
+            font-size: 13px;
+            font-family: Tahoma;
+            overflow: auto;
+            height: 140px;
+
+        }
+
+        .lien {
+            margin-left: -6px;
+            display: block;
+            background-color: #c8c8c8;
+            color: #9966cd;
+            text-decoration: none;
+            width: 70px;
+            height: 20px;
+            text-align: right;
+            padding-right: 5px;
+            border-radius: 0px 10px 10px 0px;
+            -moz-border-radius: 0px 10px 10px 0px;
+            -webkit-border-radius: 0px 10px 10px 0px;	
+            font-family: Georgia;
+            font-size: 12px;
+            padding: -5px;
+            margin-bottom: -15px;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+            vertical-align: middle;
+            text-shadow: 1px 0px 0px #fff;
+
+        }
+
+        .lien:hover {
+
+            background-color: #9966cd;
+            color: #ffffff;
+            width: 100px;
+            text-align: right;
+            vertical-align: middle;
+            text-shadow: 1px 0px 0px #5F2F8E;
+
+        }
+
+        .avatar {
+            border-radius: 100px;
+            -moz-border-radius:100px;
+            -webkit-border-radius:100px;	
+            height: 50px;
+            width: 50px;
+        }
+        a#rotator img{
+            -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out; 
+            -o-transition: all 1s ease-in-out; 
+            -ms-transition: all 1s ease-in-out; 
+            opacity:0.4;
+            filter:alpha(opacity=40);
+            border:5px solid transparent;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        a#rotator img:hover { 
+            box-shadow:1px 1px 2px rgba(0,0,0,0.1),inset 1px 1px 1px rgba(0,0,0,0.7);
+            -webkit-transform: rotate(360deg); 
+            -moz-transform: rotate(360deg); 
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg); 
+            filter:alpha(opacity=100);
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            opacity:1;
+            border:5px solid #D7D6D7;
+        }
+
+        a span{
+            position:absolute;  
+            z-index: 99;
+            text-decoration: none;
+            padding: 10px;
+            margin-top: 70px;
+            margin-left: -85px;
+
+            border-radius: 10px;
+            background-image:url(http://i45.servimg.com/u/f45/11/45/91/34/fond_d12.jpg);
+            width: 0px;
+            text-align: right;
+            color:#9966cd;
+            opacity:0;
+            font-size: 12px;
+            float:right;
+            -moz-transition:all .25s;
+            box-shadow: -1px 2px 20px #C8C8C8 inset; 
+            -moz-transition: all .3s linear;
+            -o-transform: scale(0.3) rotate(-45deg);
+            transform: scale(0.3) rotate(-45deg);
+            transition: all .3s linear;
+            -o-transition: all .3s linear;
+            -webkit-transform: scale(0.3) rotate(-45deg);
+            -webkit-transition: all .3s linear;
+            text-shadow: -1px 1px 0px #fff;
+            font-family: Georgia;
+            font-style : italic;
+        }
+
+        a span::before{
+            content:'';
+            position:absolute;
+            top:-6px;
+            left: 45;
+            width:0;
+            height:0;
+            border-bottom:  6px solid #D7D6D7;
+            border-left:6px solid transparent;
+            border-right:6px solid transparent;
+            margin-left:auto;
+            margin-right:auto;
+
+        }
+
+        a:hover span {
+
+            -moz-transform: scale(1) rotate(0deg);
+            -o-transform: scale(1) rotate(0deg);
+            -webkit-transform: scale(1) rotate(0deg);
+            opacity:1;
+
+        }
+
+        .icone rang {
+
+            text-decoration: none;
+
+        }
+        .staff {
+
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        hr {
+
+            color: #9966cd;
+            background-color: #9966cd;
+            height: 2px;
+
+
+        }
+
+        .plume {
+
+
+            font-family: Alex Brush;
+            font-size: 60px;
+            color: #fff;
+            text-shadow: -1px 1px 0px #5F2F8E;
+            position: absolute;
+            z-index: 99;
+            margin: auto;
+            width: 571px;
+            opacity: 0.5;
+
+        }
+
+        .titre {
+
+            display:block;
+            width: 571px;
+            height: 80px;
+            background-color: #9966cd;
+            -moz-border-radius:30px 30px 0px 0px; -webkit-border-radius:30px 30px 0px 0px; border-radius:30px 30px 0px 0px;
+
+        }
+
+        .welcome {
+
+            letter-spacing:10px;
+            color: #fff;
+            font-family: Georgia;
+            font-style : italic;
+            position: absolute;
+            transform: rotate(-5deg);
+            -moz-transform: rotate(-5deg);
+            -webkit-transform: rotate(-5deg);
+            -khtml-transform: rotate(-5deg);
+            margin-left: 20px;
+            margin-top: 10px;
+            text-shadow: 0px 0px 5px #5F2F8E;
+            z-index: 0;
+        }
+
+        .sous-titre { 
+            z-index: 0;
+            color: #fff;
+            font-family: Georgia;
+            font-style : italic;
+            transform: rotate(-5deg);
+            -moz-transform: rotate(-5deg);
+            -webkit-transform: rotate(-5deg);
+            -khtml-transform: rotate(-5deg);
+            margin-left: 350px;
+            margin-top: 45px;
+            text-shadow: 0px 0px 5px #5F2F8E;
+            position: absolute;
+            filter:alpha(opacity=40);
+        }
+
+        .footertexte {
+
+            font-family: Georgia;
+            font-style : italic;
+            font-size:11px;
+            width: 571px;
+            color: #c8c8c8;
+            text-align: right;
+
+        }
+
+        .footer {
+
+            width: 571px;
+
+        }
+
+        .url {
+
+            color: #9966cd;
+            text-decoration: none;
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+            text-shadow: 0px 0px 5px #ffffff;
+        }
+
+        .url:hover{
+
+            color: #ffffff;
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+            text-shadow: 0px 0px 5px #5F2F8E;
+
+
+        }
+
+        </style></head>
+    <body><center><div class="titre"><div class="welcome">Bienvenue sur</div><div class="plume" align="center">La Plume d'Ankaa</div><div class="sous-titre">une guilde du serveur Aerafal</div></div></center>
+        <table align="center"><tbody><tr><td><fieldset style="width: 400px; height: 150px; -moz-border-radius:20px 0px 20px 0px; -webkit-border-radius:20px 0px 20px 0px; border-radius:20px 0px 20px 0px;"> <legend align="right">La guilde</legend><div class="texte">La Plume tremble dans ma main alors que j'entreprends d'écrire ces quelques mots. Non pas parce que j'en suis effrayé... Non, c'est l'émotion qui me fait trembler. Cette émotion qui vous assaille lorsque dans un MMORPG, vous avez trouvé la guilde qui vous fait sentir bien, qui vous fait vous amuser. Quand vous vous rendez compte que ça vaut le coup de passer du temps devant un écran.<br><br>
+            Plus objectivement, la Plume d'Ankaa est une guilde où plusieurs valeurs sont importantes. D'une part la maturité, évidemment, car une bonne ambiance n'est possible que lorsqu'on partage une maturité certaine. Ainsi, la Plume d'Ankaa est la plupart du temps pacifiste et n'aime que peu les agressions gratuites et le non-respect de la communauté. D'autre part la sympathie, car l'austérité est inutile lorsqu'il s'agit de jouer. Nous sommes partisans d'une bonne ambiance au sein de la guilde, humour et calembours sont toujours au rendez-vous.</div></fieldset></td><td><a href="http://laplumedankaa.forumgratuit.org/t101-l-histoire-de-la-plume-d-ankaa" class="lien" target="_blank">Histoire</a><br>
+            <a href="http://laplumedankaa.forumgratuit.org/memberlist" class="lien" target="_blank">Membres</a><br>
+            <a href="http://laplumedankaa.forumgratuit.org/f3-candidatures" class="lien" target="_blank">S'inscrire</a><br>
+            <a href="http://laplumedankaa.forumgratuit.org/f13-alliances" class="lien" target="_blank">Alliances</a><br>
+            <a href="http://laplumedankaa.forumgratuit.org/t118-reglement-de-guilde" class="lien" target="_blank">Règles</a></td></tr><tr><td><fieldset style="width: 300px; height: 150px; -moz-border-radius:0px 20px 0px 20px; -webkit-border-radius:0px 20px 0px 20px; border-radius:0px 20px 0px 20px;"><legend>L'équipe</legend><center><a href="http://laplumedankaa.forumgratuit.org/u2" id="rotator" target="_blank"><img src="http://illiweb.com/fa/pbucket.gif" class="avatar"><span style="width: 80px; height:25px;">Nizel<br>Chef</span></a><a href="http://laplumedankaa.forumgratuit.org/u1" id="rotator" target="_blank"><img src="http://illiweb.com/fa/pbucket.gif" class="avatar"><span style="width: 80px; height: 25px;">Kenki<br>Admin</a><a href="http://laplumedankaa.forumgratuit.org/u43" id="rotator" target="_blank"><img src="http://illiweb.com/fa/pbucket.gif" class="avatar"><span style="width: 80px; height:25px;">Kiho/Oah<br>Bras droit</span></a><br><a href="http://laplumedankaa.forumgratuit.org/u3" id="rotator" target="_blank"><img src="http://illiweb.com/fa/pbucket.gif" class="avatar"><span style="width: 80px; height:25px;">Humility<br>Bras droit</span></a><a href="http://laplumedankaa.forumgratuit.org/u53" id="rotator" target="_blank"><img src="http://illiweb.com/fa/pbucket.gif" class="avatar"><span style="width:80px; height:25px;">Caanon<br>Bras droit</span></a></center></fieldset></td><td colspan="2"><fieldset style="width:175px; height:150px; margin-left: -100px; -moz-border-radius:20px 0px 20px 0px; -webkit-border-radius:20px 0px 20px 0px; border-radius:20px 0px 20px 0px;"><legend align="center">Planning</legend><div class="texteplanning"><a href="http://laplumedankaa.forumgratuit.org/t350-tous-au-lvl-120" class="url" target="_blank">Tous au lvl 120!!!</a></div></fieldset></td></tr></table><center><div class="footer"><div class="footertexte">Codage réalisé par ©Susu (Aislynn)<br>
+        Optimisé sur Mozilla Firefox ou Google Chrome</div></div></center></body></html>
